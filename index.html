@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Libro digital interactivo</title>
+
+  <!-- configuración del libro -->
+  <script>
+  window.book_config = {
+    // parámetro que indica si los capítulos, secciones y figura se auto numeran
+    // para que los capítulos se auto numeren deben utilizar la etiqueta <h1>
+    // para que las secciones se auto numeren deben utilizar la etiqueta <h2>
+    auto_numerate_sections_and_figures: true, 
+  }
+  </script>
+
+  <!-- núcleo del libro interactivo -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="js/book.js" charset="utf-8"></script>
+  
+  <!-- personalización del usuario -->
+  <link rel="stylesheet" href="extra/fonts.css" type="text/css">
+  <link rel="stylesheet" href="extra/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="book_loader_container"><div id="book_loader"></div></div>
+
+  <div id="book_container">
+    <div id="btn_back_page"></div>
+    <div id="btn_next_page"></div>
+    <button id="go_to_table_of_content" style="display: none;"></button>
+    
+    <button id="btn_config"></button>
+    <div id="config_options">
+      <div id="dark_light_mode"></div>
+    </div>
+
+    <!-- si este elemento no esta presente, el botón de la tabla de contenido lleva a la primera página con un elemento class="toc_link" -->
+<!--     <div id="table_of_content"></div> -->
+
+    <div id="pages_container">
+      <!--  -->
+      <div class="page" style="background-color:transparent;" num="">
+      </div>
+
+      <!--  -->
+      <div class="page invertcolor" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_cuento.png);" num="">
+        <div class="cover_title">Derecho a sentir, a expresarnos y a conectarnos con nuestras emociones</div>
+        <div class="cover_subtitle">Alexandra Fonnegra Osorio</div>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <div class="img_container">
+            <img src="images/general/Lectura_A1.png" style="width: 95%;">  
+          </div>
+          <p>Como ya lo has ido descubriendo, en el desarrollo del ser humano, aparece el proceso de socialización, 
+            como la capacidad que tenemos para reconocer y expresar nuestros sentimientos en cada uno de los 
+            entornos en los que nos desenvolvemos (el hogar, la escuela, espacios públicos, entre otros) y 
+            este proceso de socialización, se da en toda la trayectoria de la vida, iniciando en la infancia. 
+            ¿Has notado que en este momento de tu vida vienes experimentando una serie de cambios biológicos, 
+            intelectuales, afectivos y de identidad personal? No te preocupes, todos estos cambios te están 
+            llevando a la formación de tu personalidad y eso es ¡maravilloso!</p>
+          <p>Por ello, es importante que trates de identificar qué sentimientos y emociones estás experimentando 
+            en este momento de tu vida, y cómo estás proyectando a los demás lo que sientes.</p>
+          <p>Ahora te invitamos a realizar un ejercicio para avanzar en el cuidando de tu bienestar:</p>
+          <p><strong>Ver anexo 2:</strong> Audio respiración guiada: “Cuidando nuestro bienestar desde la respiración consciente”.</p>
+        </div>
+      </div>
+
+      <!--  -->
+      <!-- init-page-num="true" es un parámetro que indica que a partir de esta página comienza la numeración -->
+      <!-- inicialmente los números de las páginas se numeran con numerales romanos -->
+      <!-- num="" es un parámetro que indica que esta página no lleva numeración visible -->
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <div class="img_container">
+            <img src="images/general/Lectura_A1_1.png" style="width: 88%;">  
+          </div>
+          <p>Después de haber realizado el ejercicio propuesto en el audio, puedes distinguir de manera 
+            oportuna lo que te puede estar sucediendo porque estás desarrollando la competencia emocional 
+            que será oportuna para toda tu vida y que ha sido considerada como la capacidad que tenemos 
+            para actuar de manera adecuada ante diversas situaciones.</p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <p>Cuando una persona no ha adquirido esta competencia emocional, tiende a ser más 
+            impulsiva y actúa sin reflexionar, puede mostrarse intolerante, estresada o depresiva. 
+            Por el contrario, cuando reconocemos nuestros sentimientos, los sabemos expresar y 
+            buscamos la ayuda de las personas indicadas, estamos previniendo y nos proyectamos 
+            hacia el cumplimiento de nuestras metas y realizaciones y se disminuye la posibilidad 
+            de que sucedan hechos que puedan afectar nuestro bienestar.</p>
+          <p>Ahora bien, desde el reconocimiento del sentir como derecho, encontrarás algunas 
+            situaciones que es importante que identifiques y puedas desarrollar en el transcurso de tu vida.</p>
+          <div class="img_container">
+            <img src="images/general/Lectura_A1_2.png" style="width: 77%;">  
+          </div>
+          <p>Sabes que tienes derechos como todo ser humano, debes partir de conocerte, defendiendo tus opiniones 
+            y aquello que sientes, debes valorarte y cuidarte. Recuerda que eres una persona única, no te juzgues 
+            con severidad si cometes errores, todos los hemos cometido y hace parte de un proceso de aprendizaje.</p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <div class="border">
+          <p>Es normal que las personas experimentemos sentimientos como el amor, el respeto, la solidaridad, pero también hay sentimientos como el rechazo, 
+            la rabia, la frustración o la vergüenza hacia otras personas o hacia nosotros mismos. Lo importante es que los reconozcas y 
+            que sepas cómo tramitar estas emociones de manera adecuada. En esta medida, es importante que sepas que tienes derecho a pedir 
+            ayuda o recibir información cuando tengas dudas sobre algo. De esta manera aprendes y mejoras.</p>
+          <p>Cuando fortalecemos nuestros conocimientos, afianzamos nuestras habilidades, actitudes y valores, estamos cuidando de nuestra 
+            salud y bienestar, permitiéndonos desarrollar relaciones sociales y sexuales respetuosas; reconociendo nuestros derechos (UNESCO, 2018).</p>
+          <p>Como ya se ha nombrado, para tramitar tus emociones es importante que seas consciente de lo que sientes y piensas, 
+            lo que contribuye al desarrollo de tu inteligencia emocional, que está referida a tomar elecciones adecuadas 
+            ante las situaciones o problemas que tengas que afrontar.</p>
+        </div>
+      </div>
+
+      <div class="page" num="" >
+        <div class="border">
+          <h2 style="text-align: center; margin: 40px 0 65px;">Referencias</h2>
+          <p><span class="tab"></span><strong>Escudero, M. (2019).</strong> Emociones y sentimientos, ¿cuál es la diferencia?.
+            <a href="https://bit.ly/3u9TA77"> https://bit.ly/3u9TA77</a></p>
+          <p><span class="tab"></span><strong>Morales, M. C. (2021)</strong> Erotismo: definición... y algunas reflexiones necesarias.
+            <a href="https://bit.ly/3u8IGP2">https://bit.ly/3u8IGP2</a></p>
+          <p><span class="tab"></span><strong>Significados. (2015).</strong> Qué es placer. <a href="https://bit.ly/3GauveE">https://bit.ly/3GauveE</a></p>
+          <p><span class="tab"></span><strong>Profamilia. (s.f.).</strong> Adolescencia y pubertad. <a href="https://bit.ly/32LGou4">https://bit.ly/32LGou4</a></p>
+          <div style="position: absolute; bottom: 40px; display: grid; font-size: 12px;">
+            <span>Licencia</span>
+            <img src="images/general/by-nc-sa.svg"> 
+            <span>El contendido de esta obra esta bajo una licencia Creative Commons <br>
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">(Atribución-NoComercial-CompartirIgual).</a></span> 
+          </div>
+        </div>
+      </div>
+
+    <!-- [cierra] pages_container -->
+    </div>
+  <!-- [cierra] book_container -->
+  </div>
+
+</body>
+</html>
